@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+}
+/*Opdracht 1A*/
+.navbar-one ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+
+}
+/*Opdracht 1B*/
+.navbar-two ul {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    align-items: flex-end;
+}
+/*Opdracht 1C*/
+.navbar-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-three ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: right;
+    align-items:center;
+}
+
+.navbar-three div{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: left;
+    align-items:center;
+    gap: 15px; /* This creates the space between <img> and <p> */
+}
+/*Opdracht 1D*/
+.navbar-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-four ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: left;
+    align-items:center;
+}
+
+.navbar-four div{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: left;
+    align-items:center;
+    gap: 15px; /* This creates the space between <img> and <p> */
+}
