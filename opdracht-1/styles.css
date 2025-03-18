@@ -4,8 +4,8 @@
 /*Opdracht 1A*/
 .navbar-one ul {
     display: flex;
-    justify-content: space-between;
     list-style: none;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -17,7 +17,7 @@
     align-items: flex-end;
 }
 /*Opdracht 1C*/
-.navbar-three {
+.navbar-three,.navbar-four, .navbar-five  {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,40 +25,33 @@
 
 .navbar-three ul{
     display: flex;
-    flex-direction: row;
     list-style: none;
     justify-content: right;
     align-items:center;
 }
 
-.navbar-three div{
+.navbar-three div, .navbar-five div{
     display: flex;
-    flex-direction: row;
     list-style: none;
     justify-content: left;
     align-items:center;
     gap: 15px; /* This creates the space between <img> and <p> */
 }
-/*Opdracht 1D*/
-.navbar-three {
+/*Opdracht 1D, 1E*/
+
+.navbar-four div {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 15px;
 }
 
-.navbar-four ul{
+.navbar-four ul, .navbar-five ul  {
     display: flex;
-    flex-direction: row;
+    gap: 15px;
     list-style: none;
-    justify-content: left;
-    align-items:center;
 }
 
-.navbar-four div{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+.navbar-four ul.nav-links {
+    flex-grow: 1;
     justify-content: left;
-    align-items:center;
-    gap: 15px; /* This creates the space between <img> and <p> */
 }
