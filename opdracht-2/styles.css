@@ -34,8 +34,6 @@ h2{
 ////////////////////////*/
 body {
     display: flex;
-    /*flex-direction: column;   !* ✅ Important for vertical stacking *!*/
-    /*min-height: 100vh;*/
 }
 
 
@@ -47,6 +45,7 @@ body {
 /* Sidebar */
 
 aside {
+    min-width: 250px;
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -62,7 +61,7 @@ aside div {
     gap: 10px;
 }
 aside h3{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /* Navigation list inside aside */
@@ -108,8 +107,8 @@ nav {
     min-width: 0; /* Prevent overflow */
 }
 header {
-    width: 100%;                 /* ✅ Makes the header responsive */
-    background-image: url('/assets/placeholder-image.svg'); /* Replace with your actual image path */
+     width: 100%;                 /* ✅ Makes the header responsive */
+     background-image: url('/assets/placeholder-image.svg'); /* Replace with your actual image path */
      background-size: cover;       /* Makes sure the image covers the header */
      background-position: center;  /* Centers the image */
      height: 400px;                /* Adjust height as needed */
@@ -119,8 +118,9 @@ header {
      flex-direction: column;
  }
 header p {
-    max-width: 100%;
+    max-width: 60%;
     word-wrap: break-word;   /* Break long words if needed */
+    text-align: center;           /* Center de tekst */
 }
 
 /*////////////////////////
