@@ -1,0 +1,219 @@
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    1. Global Styles
+    2. Typografie
+    3. Areas
+        3.1 Header
+        3.2 Testimonial
+        3.3 Support
+        3.4 Faq
+        3.5 Footer
+////////////////////////////////////////////////////////////////////////*/
+
+/*grijs #899CA0 en donkergroen #1C2B32*/
+
+/*////////////////////////
+    1. Global Styles
+////////////////////////*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+}
+/*////////////////////////
+    2. Typography
+////////////////////////*/
+body {
+    display: flex;
+    /*min-height: 100vh; !* Full viewport height *!*/
+}
+
+
+/*////////////////////////
+    3. Areas
+////////////////////////*/
+
+/* Sidebar */
+
+aside {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;                 /* take full page width
+    background-color: #f9f9f9;    /* Background color */
+}
+/* Header inside the aside */
+aside div {
+    display: flex;
+    align-items: center;           /* Center items vertically */
+    justify-content: left;       /* Center items horizontally */
+    padding-left: 10px;
+    gap: 10px;
+}
+/* Navigation list inside aside */
+nav {
+    flex-grow: 1;                   /* Makes nav grow to take remaining space */
+    display: flex;
+    flex-direction: column;
+}
+#legend {
+    list-style-type: none;          /* Remove bullet points */
+}
+/* Style each list item */
+#legend li {
+    display: flex;
+    gap: 10px;
+    padding: 8px 0;
+}
+
+/* Move the buttons to the bottom.*/
+.aside-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: flex-end;      /* Push buttons to the bottom */
+    padding: 10px;
+}
+.aside-buttons button {
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+#button-login{
+    background-color: black;
+    color: white;
+}
+
+header {
+     background-image: url('/assets/placeholder-image.svg'); /* Replace with your actual image path */
+     background-size: cover;       /* Makes sure the image covers the header */
+     background-position: center;  /* Centers the image */
+     height: 400px;                /* Adjust height as needed */
+     display: flex;                /* Optional: center the text */
+     align-items: center;          /* Optional: center the text vertically */
+     justify-content: center;      /* Optional: center the text horizontally */
+     flex-direction: column;
+ }
+article {
+    flex-grow: 1;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+/*////////////////////////
+    3. Main
+////////////////////////*/
+/* Main content in the middle */
+main {
+    flex-grow: 0; /* Takes up available space */
+    background-color: #fafafa;
+    overflow: auto;       /* Add scroll if content overflows */
+}
+#legend li, aside h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+}
+#legend li img, aside h2 img {
+    flex-shrink: 0;
+    align-items: center;
+}
+#legend li a {
+    display: flex;
+    align-items: center;   /* Vertically center icon and text */
+    gap: 12px;             /* Distance between icon and text */
+    text-decoration: none; /* Optional: remove underline */
+    color: inherit;        /* Optional: inherit text color */
+    padding: 8px 0;        /* Optional: space between list items */
+    font-size: 12px;
+}
+/*////////////////////////
+    3. ProductCards
+////////////////////////*/
+/* Container voor de kaarten */
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;              /* Zorgt ervoor dat de kaarten naar de volgende regel springen bij gebrek aan ruimte */
+    justify-content: center;      /* Zorgt ervoor dat de kaarten in het midden van de pagina worden uitgelijnd */
+    gap: 20px;                    /* Ruimte tussen de kaarten */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* Stijl voor elke productkaart (gebruik van <article>) */
+.product-card {
+    width: 260px;                 /* Maximale breedte van elke kaart */
+    border-radius: 8px;           /* Afgeronde hoeken */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schaduw voor de kaarten */
+    padding: 10px;
+    text-align: left;           /* Center de tekst */
+    flex: 0 0 auto;
+}
+/* Stijl voor de prijscontainer (prijs aan de linkerzijde en icoon aan de rechterzijde) */
+.price-container {
+    display: flex;
+    justify-content: space-between; /* Plaatst de prijs links en het icoon rechts */
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.product-card h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.price {
+    font-weight: bold;
+    text-align: left;  /* Zorg ervoor dat de prijs altijd aan de linkerzijde staat */
+    flex-grow: 1;      /* Laat de prijs de beschikbare ruimte opvullen */
+}
+
+.product-card img {
+    flex-shrink: 0;  /* Voorkomt dat het icoon zijn grootte verandert */
+}
+
+.product-card-image {
+    width: 100%;                 /* Makes the image take up full width of the card */
+    height: auto;                /* Maintains the aspect ratio */
+    border-radius: 8px;          /* Adds rounded corners to the image */
+}
+
+/* Stijl voor de inschrijven knop */
+.button-inschrijven{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;                /* Maak de knop 100% van de breedte van de kaart */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*////////////////////////
+    3. Footer
+////////////////////////*/
+/* Footer sticks to the bottom */
+footer {
+    padding: 10px 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+footer p {
+
+    font-size: 8px;
+}
+
+
+
+
